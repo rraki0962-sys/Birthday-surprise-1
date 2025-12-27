@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday My Love</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #ff5f8a, #ff9aa2);
+  color: white;
+  text-align: center;
+}
+.page { display: none; padding: 30px; }
+.active { display: block; }
+
+h1, h2 {
+  margin-bottom: 15px;
+}
+
+button {
+  background: white;
+  color: #ff4f81;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 30px;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+img {
+  width: 90%;
+  max-width: 280px;
+  border-radius: 20px;
+  margin: 10px 0;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.quote {
+  font-style: italic;
+  margin: 15px 0;
+}
+
+.footer {
+  margin-top: 20px;
+  font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Background Music -->
+<audio autoplay loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<!-- PAGE 1 -->
+<div class="page active" id="page1">
+  <h1>🎂 Happy Birthday My Special One 🎂</h1>
+  <p>Today is all about YOU 💖</p>
+  <button onclick="go(2)">About Her 💕</button>
+  <button onclick="go(3)">Quotes on Her ✨</button>
+</div>
+
+<!-- PAGE 2 -->
+<div class="page" id="page2">
+  <h2>💖 About Her</h2>
+  <p>
+    She is not just a person,  
+    she is an emotion, a feeling, a blessing.  
+  </p>
+  <p>
+    ఆమె నవ్వు ఒక వెలుగు,  
+    ఆమె మాటలు ఒక మాధుర్యం.  
+    నా జీవితంలో వచ్చిన అందమైన అదృష్టం ఆమె.
+  </p>
+  <button onclick="go(4)">Next 💌</button>
+</div>
+
+<!-- PAGE 3 -->
+<div class="page" id="page3">
+  <h2>✨ Quotes on Her</h2>
+
+  <div class="quote">
+    “She doesn’t need perfection,  
+    her presence itself is magic.”
+  </div>
+
+  <div class="quote">
+    “Her smile is my favorite comfort.”
+  </div>
+
+  <div class="quote">
+    “ఆమె ఉన్న చోటే నా ప్రశాంతత.”
+  </div>
+
+  <button onclick="go(4)">Next 💌</button>
+</div>
+
+<!-- PAGE 4 -->
+<div class="page" id="page4">
+  <h2>💌 My Opinion About You</h2>
+  <p>
+    You are strong, caring, emotional, and real.  
+    I admire the way you understand people and situations.  
+    You inspire me without even trying.
+  </p>
+
+  <p>
+    నువ్వు నా జీవితంలో వచ్చిన  
+    అతి విలువైన మనిషివి.  
+    మాటల్లో చెప్పలేని గౌరవం, ప్రేమ నాకు నీ మీద ఉంది.
+  </p>
+
+  <button onclick="go(5)">See Our Memories 🎉</button>
+</div>
+
+<!-- PAGE 5 -->
+<div class="page" id="page5">
+  <h2>🎉 Birthday Memory Wall 🎉</h2>
+
+  <img src="photo1.jpg">
+  <img src="photo2.jpg">
+  <img src="photo3.jpg">
+
+  <p>
+    💖 Happy Birthday 💖 <br><br>
+    May your life be filled with love, success,  
+    happiness, peace, and beautiful memories.  
+    I wish you endless smiles and dreams come true.
+  </p>
+
+  <div class="footer">
+    Forever special to me ❤️
+  </div>
+</div>
+
+<script>
+function go(n) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.getElementById('page' + n).classList.add('active');
+}
+</script>
+
+</body>
+</html>
